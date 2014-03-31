@@ -1,0 +1,99 @@
+
+ul#nav {
+position:relative;
+z-index:3 !important; /* This keeps the dropdown buttons visible above jQuery slideshows, Flash components or any absolute positioned elements below them (as long as those elements' Z-Index is less than 3) */
+width: 152px;
+padding: 0;
+list-style:none;
+}
+ul#nav li {
+float:left;
+background: #accffa;
+border-top: 1px solid #fff;
+border-right: 1px solid #4e83c4;
+border-bottom: 1px solid #4e83c4;
+border-left: 1px solid #fff;
+}
+ul#nav li.parent {
+width:190px;
+}
+ul#nav li:hover {
+position:static; /* This fixes an occasional IE7 error */
+background-color: #e0edfe;
+background-position: 155px -48px;
+}
+ul#nav li a {
+color: #0f386a;
+display:block;
+width:150px;
+height:46px;
+padding: 0 20px;
+line-height:46px;
+text-align:center;
+text-transform:uppercase;
+text-decoration:none;
+font-size:14px;
+font-weight:bold;
+}
+ul#nav li.parent a {
+width:140px;
+padding-right:30px;
+}
+ul#nav li ul {
+position: absolute;
+left: -9999em;
+z-index:1;
+width:192px;
+margin: -47px 0 0 192px;
+padding:0;
+list-style:none;
+}
+ul#nav li:hover ul {
+left: auto;
+}
+ul#nav li ul li {
+position:relative;
+left:-1px;
+/*float:none;*/
+background:#3467a6;
+border-top: 1px solid #6f9dd4;
+border-right: 1px solid #0f386a;
+border-bottom: 1px solid #0f386a;
+border-left: 1px solid #6f9dd4;
+}
+ul#nav li ul li.parent {
+}
+ul#nav li ul li:hover {
+position:relative;
+left:-1px;
+background-color: #709bd0;
+background-position: 160px 0;
+border-top: 1px solid #accffa;
+border-left: 1px solid #accffa;
+}
+ul#nav li ul li a {
+width:150px;
+height:auto;
+padding: 15px 20px;
+color:#fff;
+line-height: normal;
+text-align:left;
+text-decoration:none;
+font-size:14px;
+font-weight:normal;
+}
+ul#nav li ul li ul {
+margin: -47px 0 0 192px;
+}
+ul#nav li:hover ul li ul {
+left: -999em;
+}
+ul#nav li:hover ul, ul#nav li ul li:hover ul {
+left: auto;
+}
+ul#nav li:hover ul li ul, ul#nav li:hover ul li ul li ul {
+left: -999em;
+}
+ul#nav li:hover ul, ul#nav li ul li:hover ul, ul#nav li ul li ul li:hover ul {
+left: auto;
+}

@@ -1,0 +1,155 @@
+#nav {
+}
+
+#nav > ul {
+	position:relative;
+	z-index:3 !important; /* This keeps the dropdown buttons visible above jQuery slideshows, Flash components or any absolute positioned elements below them (as long as those elements' Z-Index is less than 3) */
+	width: 152px;
+	padding: 0;
+	list-style:none;
+}
+#nav > ul li {
+	float:left;
+	position: relative;
+	background: #F09609;;
+}
+
+#nav > ul li:hover {
+	background-color: #E51400;
+}
+
+#nav > ul li a {
+	color: #FFF;
+	display:block;
+	width: 175px;
+	height: 45px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+	padding-left: 30px;
+	/*padding: 0 20px;*/
+	line-height:45px;
+	text-align:center;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-size:14px;
+	font-weight:bold;
+}
+
+
+
+#nav > ul li ul {
+	position: absolute;
+	left: -9999em;
+	z-index:1;
+	margin-top: -45px;
+	margin-left: 216px;
+	padding:0;
+	/*padding-left: 20px;*/
+	list-style:none;
+}
+
+#nav > ul li:hover ul {
+	left: auto;
+}
+
+
+#nav > ul > li > ul > li {
+	width: 60%;
+	-webkit-transition: width 0.3s; /* For Safari 3.1 to 6.0 */
+	transition: width 0.3s;
+}
+
+#nav > ul > li:hover > ul > li  {
+	width: 100%;
+}
+
+
+
+#nav > ul li ul li {
+	position:relative;
+	left:-2px;
+	background:#3467a6;
+}
+
+#nav > ul li ul li:hover {
+	position:relative;
+	left:-2px;
+	background-color: #709bd0;
+	background-position: 160px 0;
+}
+
+#nav > ul li ul li a {
+	height:auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 11px;
+	padding-left: 41px;
+	color:#fff;
+	line-height: normal;
+	text-align:left;
+	text-decoration:none;
+	font-size:14px;
+}
+
+
+
+#nav > ul > li > ul > li > ul {
+	margin: -45px 0 0 228px;
+}
+
+#nav > ul > li > ul > li > ul > li {
+	width: 60%;
+	-webkit-transition: width 0.3s; /* For Safari 3.1 to 6.0 */
+	transition: width 0.3s;
+}
+
+
+#nav > ul > li > ul > li:hover > ul > li {
+	width: 100%;
+}
+
+#nav > ul li:hover ul li ul {
+	left: -999em;
+}
+#nav > ul li:hover ul, #nav > ul li ul li:hover ul {
+	left: auto;
+}
+
+#nav > ul li:hover ul li ul, #nav > ul li:hover ul li ul li ul {
+	left: -999em;
+}
+
+#nav > ul li:hover ul, #nav > ul li ul li:hover ul, #nav > ul li ul li ul li:hover ul {
+	left: auto;
+}
+
+
+
+
+/* BOOTSTRAP FIX */
+#nav * {
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+
+/* ALIGN ALL TEXT */
+#nav li a {
+	text-align: right !important;
+	font-size: 11px !important;
+}
+
+
+/* GLYPHICON INTEGRATION */
+#nav li span.glyphicon {
+	position: absolute;
+	top: 13px;
+	left: 10px;
+	font-size: 20px;
+}
+
+#nav li:hover > span.glyphicon {
+	color: #0DFF5E;
+}
+
+
